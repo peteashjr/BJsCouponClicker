@@ -1,8 +1,10 @@
-'use strict';
+'use strict'; 
 
 chrome.browserAction.onClicked.addListener(
-	function(tab) { 
-		clickOnDeals();
-	}
+	function(tab) {  
+		chrome.tabs.executeScript(null, { file: "jquery.min.js" }, function() {
+			chrome.tabs.executeScript(null, { file: "BJsScript.js" });
+		}); 
+	} 
 );
  

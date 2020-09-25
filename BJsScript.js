@@ -3,12 +3,12 @@ function sleep(ms) {
 }
 
 async function clickOnDeals() { 
-  await sleep(2000); 
-  var i = 0;
-  // Sleep in loop
+  var i = 0; 
+  couponsToClip = $('button:contains("CLIP")').length 
+  console.log("Clickable Coupons:" + couponsToClip)
   while($('button:contains("CLIP")').length > 0) {  
 	clickDeal($('button:contains("CLIP")').length, i)
-	await sleep(2000);
+	await sleep(1800);
     console.log(i);
 	i++;
   }
@@ -23,3 +23,4 @@ function clickDeal(couponCount, i) {
 	console.log('clipping coupon for :' + product);  
 } 
 
+clickOnDeals();
