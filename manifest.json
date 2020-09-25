@@ -1,7 +1,7 @@
 {
     "name": "BJs Coupon Clicker",
     "version": "1.0",
-    "description": "Clicking all available BJs coupons",
+    "description": "1.)Visit https://www.bjs.com/myCoupons 2.)Click Extension 3.)Profit",
     "manifest_version": 2,
 	"background": {
 		"scripts": ["jquery.min.js", "BJsScript.js", "background.js"],
