@@ -7,9 +7,13 @@
 		"scripts": ["jquery.min.js", "BJsScript.js", "background.js"],
 		"persistent": false
 	},
-	"browser_action": {
-	  },
+	"browser_action": {},
 	"permissions": [
-      "activeTab"
-    ]
+		"activeTab"
+    ],
+	"icons": {
+		"16": "icon.png",
+		"48": "icon.png",
+		"128": "icon.png" 
+	}
  }
