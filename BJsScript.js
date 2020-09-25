@@ -9,7 +9,6 @@ async function clickOnDeals() {
   while($('button:contains("CLIP")').length > 0) {  
 	clickDeal($('button:contains("CLIP")').length, i)
 	await sleep(1800);
-    console.log(i);
 	i++;
   }
 }
